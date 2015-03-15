@@ -103,16 +103,10 @@ angular.module('pcTp01App')
 		// var tempoMedioDeAtendimento = 1/B;
 	    $scope.tempoMedioDeAtendimento = 1/B;
 
-	};
-
-
-	// TO-DO
-	$scope.tempoMedioDeResposta = function () {
-
-	};
-
-	// TO-DO: Não seria igual a Nw?
-	$scope.tamanhoMedioDaFila = function () {
+	    // *** Tempo de Resposta ***
+	    // tempo médio gasto na fila (Wi)
+	    // tempo médio que demorou em atendimento (Si)
+	    $scope.tempoMedioDeResposta = $scope.tempoMedioDeAtendimento + $scope.tempoMedioDeEspera
 
 	};
 
